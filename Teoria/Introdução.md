@@ -17,12 +17,12 @@ Encapsula:
 - Dado a ser mostrado na tela (data binding): associação dos dados do componente com os componentes HTML no template.
 - Comportamento da VIEW.
 
-Componente Raiz (root)
+2. Componente Raiz (root)
 
-2. Diretivas
-3. Roteamento
-4. Serviços
-5. Template
-6. Metadata
-7. Data binding
-8. Injeção dependência
+1. Diretivas
+1. Roteamento
+1. Serviços
+1. Template
+1. Metadata
+1. Data binding
+1. Injeção dependência
