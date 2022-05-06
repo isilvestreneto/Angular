@@ -62,6 +62,14 @@
             >*ngContent</a
           >
         </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [class.active]="aba == 'custom'"
+            (click)="aba = 'custom'"
+            >Custom Directives</a
+          >
+        </li>
       </ul>
     </div>
   </div>
@@ -78,4 +86,5 @@
     </app-diretiva-ngcontent>
   </p>
   <p *ngSwitchDefault>Home</p>
+  <p *ngSwitchCase="'custom'"><app-diretivas-customizadas></app-diretivas-customizadas></p>
 </div>
