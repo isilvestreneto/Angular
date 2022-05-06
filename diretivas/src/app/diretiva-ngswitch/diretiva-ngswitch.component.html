@@ -15,19 +15,52 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" [class.active]="aba == 'home'" (click)="aba = 'home'">Home</a>
+          <a
+            class="nav-link"
+            [class.active]="aba == 'home'"
+            (click)="aba = 'home'"
+            >Home</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" [class.active]="aba == 'ngfor'" (click)="aba = 'ngfor'">*ngFor</a>
+          <a
+            class="nav-link"
+            [class.active]="aba == 'ngfor'"
+            (click)="aba = 'ngfor'"
+            >*ngFor</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" [class.active]="aba == 'ngclass'" (click)="aba = 'ngclass'">*ngClass</a>
+          <a
+            class="nav-link"
+            [class.active]="aba == 'ngclass'"
+            (click)="aba = 'ngclass'"
+            >*ngClass</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" [class.active]="aba == 'ngstyle'" (click)="aba = 'ngstyle'">*ngStyle</a>
+          <a
+            class="nav-link"
+            [class.active]="aba == 'ngstyle'"
+            (click)="aba = 'ngstyle'"
+            >*ngStyle</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" [class.active]="aba == 'elvis'" (click)="aba = 'elvis'">Operador Elvis</a>
+          <a
+            class="nav-link"
+            [class.active]="aba == 'elvis'"
+            (click)="aba = 'elvis'"
+            >Operador Elvis</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [class.active]="aba == 'ngcontent'"
+            (click)="aba = 'ngcontent'"
+            >*ngContent</a
+          >
         </li>
       </ul>
     </div>
@@ -35,11 +68,14 @@
 </nav>
 
 <div class="container" [ngSwitch]="aba">
-<p *ngSwitchCase="'ngfor'"><app-diretiva-ngfor></app-diretiva-ngfor></p>
-<p *ngSwitchCase="'ngclass'"><app-diretiva-ngclass></app-diretiva-ngclass></p>
-<p *ngSwitchCase="'ngstyle'"><app-diretiva-ngstyle></app-diretiva-ngstyle></p>
-<p *ngSwitchCase="'elvis'"><app-operador-elvis></app-operador-elvis></p>
-<p *ngSwitchDefault>
-  Home
-</p>
+  <p *ngSwitchCase="'ngfor'"><app-diretiva-ngfor></app-diretiva-ngfor></p>
+  <p *ngSwitchCase="'ngclass'"><app-diretiva-ngclass></app-diretiva-ngclass></p>
+  <p *ngSwitchCase="'ngstyle'"><app-diretiva-ngstyle></app-diretiva-ngstyle></p>
+  <p *ngSwitchCase="'elvis'"><app-operador-elvis></app-operador-elvis></p>
+  <p *ngSwitchCase="'ngcontent'">
+    <app-diretiva-ngcontent>
+      Este conteúdo foi passado para o componente.
+    </app-diretiva-ngcontent>
+  </p>
+  <p *ngSwitchDefault>Home</p>
 </div>
